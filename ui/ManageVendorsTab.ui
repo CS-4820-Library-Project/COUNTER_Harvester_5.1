@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manage_vendor_tab</class>
+ <widget class="QWidget" name="manage_vendor_tab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>691</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	
+border:none;
+background-color:transparent;
+background:none;
+padding:0;
+margin:0;
+color:#fff;
+}
+
+
+
+#manage_vendor_tab{
+background-color:#1f232a;
+}
+#EditVendor{
+background-color:#16191d;
+}
+QPushButton{
+text-align:left;
+padding: 5px 10px;
+
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+}
+QPushButton:pressed{
+background-color:grey;
+text-align:left;
+padding:2px 10px;
+color:white;}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QWidget" name="centralwidget" native="true">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QWidget" name="SelectVendor" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="3" column="0" rowspan="7">
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="2" column="1" colspan="2">
+             <widget class="QFrame" name="frame_2">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #000000;
+border-color:grey;
+border-radius:15px;
+}
+
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QPushButton" name="addVendorButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton { 
+    color: #FFFFFF;
+	font: bold;
+   border-radius: 4px;
+text-align: center;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Add New Vendor</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>resources/Icons/add.png</normaloff>resources/Icons/add.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="importVendorsButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton { 
+    color: #FFFFFF;
+	font: bold;
+   border-radius: 4px;
+text-align: center;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Import Vendors</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>resources/Icons/import.png</normaloff>resources/Icons/import.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="exportVendorsButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/newPrefix/save_icon.png&quot;/&gt;yguhbnj&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton { 
+    color: #FFFFFF;
+	font: bold;
+   border-radius: 4px;
+text-align: center;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Export Vendors</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>resources/Icons/export - Copy.png</normaloff>resources/Icons/export - Copy.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="editvendorsbutton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton { 
+    color: #FFFFFF;
+	font: bold;
+   border-radius: 4px;
+text-align: center;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Edit Vendor</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>resources/Icons/edit.png</normaloff>resources/Icons/edit.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QListView" name="vendorsListView">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QListView {
+	background-color: rgb(33, 33, 33);
+	color:white;
+	alternate-background-color: rgb(50, 50, 50);
+	padding: 8px;
+	border: 2px solid gray;
+	border-radius: 4px;
+}
+
+QListView::item {
+    padding: 6px;
+}
+
+
+QScrollBar {
+    border: none;
+    background: rgb(30, 30, 30);
+    width: 15px;
+    margin: 15px 0 15px 0;
+}</string>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0" alignment="Qt::AlignHCenter">
+          <widget class="QFrame" name="selectVersionFrame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 2px solid #000000;
+border-color:grey;
+border-radius:15px;
+}
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="pushButton" stdset="0">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="version51">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { 
+    color: #FFFFFF;
+	font: bold;
+   border-radius: 4px;
+text-align: center;
+}
+
+</string>
+              </property>
+              <property name="text">
+               <string>Version 5.1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="version50">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { 
+    color: #FFFFFF;
+	font: bold;
+   border-radius: 4px;
+text-align: center;
+}
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>Version 5.0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="font">
+            <font>
+             <family>Georgia</family>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Select Vendor&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

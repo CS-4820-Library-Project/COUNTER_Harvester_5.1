@@ -1,0 +1,17 @@
+[
+  {
+    "name": "COUNTER Test 5.1 Server",
+    "version": "5.1",
+    "base_url": "https://stoplight.io/mocks/countermetrics/counter-sushi-api/173057565/r51/reports",
+    "starting_year": "2023",
+    "customer_id": "3435",
+    "requestor_id": "",
+    "api_key": "",
+    "platform": "",
+    "requires_two_attempts": false,
+    "does_ip_checking": false,
+    "needs_throttling": false,
+    "notes": "",
+    "provider": ""
+  }
+]

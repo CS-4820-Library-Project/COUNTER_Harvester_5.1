@@ -1,0 +1,5 @@
+python-dotenv==1.0.1
+PyQt5==5.15.10
+PySide6==6.6.3
+requests==2.31.0
+validators==0.24.0

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alexander Street Press",
+    "version": "5.0",
+    "base_url": "https://pqbi.prod.proquest.com/release/sushi/asp/sushi/reports",
+    "starting_year": "2000",
+    "customer_id": "000",
+    "requestor_id": "000000000000000000000000",
+    "api_key": "",
+    "platform": "",
+    "requires_two_attempts": false,
+    "does_ip_checking": false,
+    "needs_throttling": false,
+    "notes": "",
+    "provider": ""
+  },
+  {
+    "name": "Allen Press",
+    "version": "5.0",
+    "base_url": "https://sitemaster.meridian.allenpress.com//sushi/reports",
+    "starting_year": "2000",
+    "customer_id": "00000",
+    "requestor_id": "00000",
+    "api_key": "000000000000000000000000000000000000",
+    "platform": "",
+    "requires_two_attempts": false,
+    "does_ip_checking": false,
+    "needs_throttling": false,
+    "notes": "",
+    "provider": ""
+  }
+]

@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="TabIcons">
+    <file>resources/data-transfer.png</file>
+    <file>resources/help.png</file>
+    <file>resources/list.png</file>
+    <file>resources/loupe.png</file>
+    <file>resources/settings.png</file>
+    <file>resources/management.png</file>
+  </qresource>
+  <qresource prefix="Icons">
+    <file>resources/Icons/diskette.png</file>
+    <file>resources/Icons/trash-can.png</file>
+    <file>resources/Icons/undo.png</file>
+    <file>resources/Icons/add.png</file>
+    <file>resources/Icons/edit.png</file>
+    <file>resources/Icons/export - Copy.png</file>
+    <file>resources/Icons/import.png</file>
+    <file>resources/Icons/new - Copy.png</file>
+    <file>resources/Icons/remove.png</file>
+    <file>resources/Icons/trash-can.png</file>
+    <file>resources/Icons/user - Copy.png</file>
+  </qresource>
+</RCC>
