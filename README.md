@@ -1,7 +1,9 @@
-# COUNTER-Release-5.1
-Group Project CS-4820
-This project uses the SUSHI API to request usage reports from library vendors. The JSON data received is used to generate TSV reports that follow the COUNTER 5 standards.
-The project is written with Python 3.11. The PyQt GUI framework is used to create a user friendly (hopefully) GUI.
+# Under development
+This app is not yet complete. Contact Melissa Belvadi mbelvadi@upei.ca for more information.
+
+# COUNTER Release 5.0 and 5.1
+This project uses the COUNTER Metrics API to request usage reports from library vendors. The JSON data received is used to generate TSV reports that follow the COUNTER 5.0 and 5.1 standards.
+The project is written with Python 3.11. The PyQt GUI framework is used.
 
 ## Developer Contact Info - original developers (Counter 5.0)
 - Adam McGuigan apmcguigan@upei.ca
@@ -22,8 +24,6 @@ The project is written with Python 3.11. The PyQt GUI framework is used to creat
 ## Future developer contact info
 - Melissa Belvadi, mbelvadi@upei.ca
 
-## Download Project 
-https://github.com/shubhamkaura04/COUNTER-Release-5.1.git
 
 ## Developer Documentation
 
